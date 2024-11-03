@@ -147,7 +147,7 @@ class _UserDetailsViewState extends State<UserDetailsView> {
                         onToggle: (index) {
                           context.read<UserDetailsBloc>().add(
                                 LoadDataEvent(
-                                  filter: index == 0 ? 'resolved' : 'unresolved',
+                                  filter: index == 0 ? S.current.resolved_en : S.current.unresolved_en,
                                   userId: widget.userId,
                                 ),
                               );
@@ -209,7 +209,9 @@ class _UserDetailsViewState extends State<UserDetailsView> {
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
                                     border: Border.all(
-                                      color: task.status == "unresolved" ? AppColors.redColor : AppColors.whiteColor,
+                                      color: task.status == S.current.unresolved_en
+                                          ? AppColors.redColor
+                                          : AppColors.whiteColor,
                                       width: 1,
                                     ),
                                   ),
@@ -242,7 +244,9 @@ class _UserDetailsViewState extends State<UserDetailsView> {
                                                 ChangeTaskStatusEvent(
                                                   userId: state.user!.id,
                                                   taskId: task.id,
-                                                  status: task.status == 'resolved' ? 'unresolved' : 'resolved',
+                                                  status: task.status == S.current.resolved_en
+                                                      ? S.current.unresolved_en
+                                                      : S.current.resolved_en,
                                                 ),
                                               ),
                                           child: Container(

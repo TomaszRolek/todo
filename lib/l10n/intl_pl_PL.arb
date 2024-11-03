@@ -20,5 +20,7 @@
   "name_desc": "Po nazwie, malejąco",
   "name_asc": "Po nazwie, rosnąco",
   "resolved": "Rozwiązane",
-  "unresolved": "Nierozwiązane"
+  "unresolved": "Nierozwiązane",
+  "resolved_en": "resolved",
+  "unresolved_en": "unresolved"
 }

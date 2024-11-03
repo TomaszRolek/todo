@@ -259,6 +259,26 @@ class S {
       args: [],
     );
   }
+
+  /// `resolved`
+  String get resolved_en {
+    return Intl.message(
+      'resolved',
+      name: 'resolved_en',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `unresolved`
+  String get unresolved_en {
+    return Intl.message(
+      'unresolved',
+      name: 'unresolved_en',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

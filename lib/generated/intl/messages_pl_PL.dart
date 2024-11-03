@@ -43,10 +43,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "name_desc":
             MessageLookupByLibrary.simpleMessage("Po nazwie, malejąco"),
         "resolved": MessageLookupByLibrary.simpleMessage("Rozwiązane"),
+        "resolved_en": MessageLookupByLibrary.simpleMessage("resolved"),
         "task_description":
             MessageLookupByLibrary.simpleMessage("Treść zadania"),
         "tasks": MessageLookupByLibrary.simpleMessage("Zadania"),
         "unresolved": MessageLookupByLibrary.simpleMessage("Nierozwiązane"),
+        "unresolved_en": MessageLookupByLibrary.simpleMessage("unresolved"),
         "user_details":
             MessageLookupByLibrary.simpleMessage("Szczegóły użytkownika"),
         "user_not_found": MessageLookupByLibrary.simpleMessage(
